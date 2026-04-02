@@ -13,7 +13,6 @@ The core business question was:
 
 The findings were used to generate three strategic recommendations for the **Bellabeat Leaf** wellness tracker, focused on movement reminders, sleep quality, and personalised user goals.
 
-\---
 
 ## Business Context
 
@@ -21,7 +20,6 @@ Bellabeat is a high-growth wellness technology company that designs health-focus
 
 While Bellabeat has established a strong presence in the wellness market, the marketing team identified an opportunity to use smart device usage data to better understand consumer behaviour and refine product positioning. Rather than relying on assumptions, the goal was to let real-world usage patterns drive the strategy.
 
-\---
 
 ## Tools Used
 
@@ -32,7 +30,6 @@ While Bellabeat has established a strong presence in the wellness market, the ma
 |Microsoft PowerPoint|14-slide executive presentation deck|
 |Microsoft Word|Full analytical report|
 
-\---
 
 ## Data Source
 
@@ -43,7 +40,6 @@ While Bellabeat has established a strong presence in the wellness market, the ma
 * **Tables used:** daily\_activity, sleep\_day, hourly\_steps, hourly\_intensities, weight\_log
 * **Privacy:** No personally identifiable information included
 
-\---
 
 ## Data Cleaning
 
@@ -57,7 +53,6 @@ Before analysis, all five tables were audited in BigQuery. The following issues 
 |Mixed timestamp formats in hourly tables|Standardised|CASE / PARSE\_TIMESTAMP applied to ensure consistent UTC format|
 |Sedentary minutes include sleep|Documented|Fitbit counts all inactivity; comparisons made relatively between segments|
 
-\---
 
 ## Analysis \& Key Findings
 
@@ -67,7 +62,6 @@ Before analysis, all five tables were audited in BigQuery. The following issues 
 
 Users average 8,329 daily steps — 17% below the WHO 10,000-step goal. Saturday is the most active day at 8,979 steps, driven by leisure activity rather than habit. Sunday and Friday are the weakest days. Monday records the highest sedentary time (16.4 hours), suggesting a work-week onset effect. This pattern mirrors what Cyclistic found with casual riders: activity is recreational, not routine.
 
-\---
 
 ### 2\. Activity by Hour — Three Peaks and a Critical Dip
 
@@ -75,7 +69,6 @@ Users average 8,329 daily steps — 17% below the WHO 10,000-step goal. Saturday
 
 Three clear activity windows emerge across the day: morning (8–10am), lunch (12–2pm), and evening (5–7pm, peaking at 6pm with 599 avg steps/hour). Crucially, a consistent **3pm dip** drops activity to 406 avg steps — the lowest point of the active day. This is the single most actionable finding in the dataset: it identifies a precise, daily window for a Leaf movement reminder.
 
-\---
 
 ### 3\. Sleep Quality — The Sunday Paradox
 
@@ -83,7 +76,6 @@ Three clear activity windows emerge across the day: morning (8–10am), lunch (1
 
 Users average 7.0 hours of sleep per night — just meeting the minimum recommended threshold — but spend 39 minutes awake in bed nightly, indicating poor sleep quality rather than a duration problem. The Sunday paradox stands out: Sunday has the most time in bed (8.4 hours) yet the worst sleep quality (50.8 minutes awake). Anticipatory work-week stress is the likely driver. This is a clear, underserved use case for a Leaf wind-down programme.
 
-\---
 
 ### 4\. User Segments — Who Are These Users?
 
@@ -91,7 +83,6 @@ Users average 7.0 hours of sleep per night — just meeting the minimum recommen
 
 Users were segmented into four tiers by average daily step count. Moderately Active users (33.3%) are the largest group and sit closest to the Active threshold — making them the highest-priority conversion target. With relatively small step increases, this segment could cross into Active behaviour. Sedentary users (21.2%) represent a separate challenge that likely requires different messaging and product features.
 
-\---
 
 ### 5\. Sedentary Behaviour Across Segments
 
@@ -99,7 +90,6 @@ Users were segmented into four tiers by average daily step count. Moderately Act
 
 Even the most Active users average 16.2 sedentary hours per day — demonstrating that high step counts do not prevent prolonged inactivity. The Sedentary segment averages 18.2 hours. Paradoxically, Lightly Active users (17.7h) sit above Active users in sedentary time despite a moderate step count, suggesting that activity is concentrated in short bursts. Sedentary behaviour is a universal problem across all segments, not just the least active users.
 
-\---
 
 ### 6\. Active Minutes Breakdown — The Real Picture of the Day
 
@@ -107,7 +97,6 @@ Even the most Active users average 16.2 sedentary hours per day — demonstratin
 
 Breaking the day into activity intensity types reveals the full extent of inactivity. Sedentary time accounts for 951.8 minutes per day — 66% of a 24-hour day. Very Active minutes total just 23.2 per day, which is close to the recommended 20–30 minutes of vigorous daily exercise, but users are not consistently reaching it. The gap between intent and habit is where the Leaf can intervene.
 
-\---
 
 ## Summary
 
@@ -125,7 +114,6 @@ Breaking the day into activity intensity types reveals the full extent of inacti
 
 **Core insight:** Users are not inactive by choice — they move when reminded (commute, lunch, post-work) but spend the rest of the day sedentary without realising it. The Leaf's opportunity is to close the gap between the activity users already do and the activity they could do with the right nudge at the right time.
 
-\---
 
 ## Top 3 Recommendations
 
@@ -135,7 +123,6 @@ Deploy a haptic movement reminder via the Leaf at 3pm daily — the most consist
 
 **Messaging:** *"You've been still for a while — a 5-minute walk changes everything."*
 
-\---
 
 ### 02 · Sunday Wind-Down Programme *(Sleep \& Retention)*
 
@@ -143,7 +130,6 @@ Build a guided Sunday evening wind-down sequence in the Bellabeat app, triggered
 
 **Messaging:** *"Sunday sorted — wake up Monday ready."*
 
-\---
 
 ### 03 · Personalised Goals by Activity Segment *(Conversion \& Engagement)*
 
@@ -151,7 +137,6 @@ Classify users into activity segments at onboarding based on their first two wee
 
 **Messaging:** *"You're closer than you think — let's close the gap together."*
 
-\---
 
 ## Next Steps
 
@@ -161,19 +146,18 @@ Classify users into activity segments at onboarding based on their first two wee
 * **Build segment-aware onboarding** — Classifying users at onboarding and immediately personalising goals and reminders could drive early retention and habit formation
 * **Expand the dataset** — 33 users over 31 days in 2016 limits generalisability; a larger, more recent, and more diverse dataset would significantly increase confidence in all findings
 
-\---
 
 ## Presentation \& Report
 
 The full deliverables are available in this repository:
 
-📊 Bellabeat_Analysis_Peter_Francis.pptx — 14-slide executive presentation  
-📝 Bellabeat_Report_Peter_Francis.docx — Full analytical report (9 pages)  
-📈 charts — All 6 analysis charts
+📊 [`Bellabeat_Analysis_Peter_Francis.pptx`](Bellabeat_Analysis_Peter_Francis.pptx) — 14-slide executive presentation  
+📝 [`Bellabeat_Report_Peter_Francis.docx`](Bellabeat_Report_Peter_Francis.docx) — Full analytical report (9 pages)  
+📈 [`charts`](charts/) — All 6 analysis charts
 
 🔗 [View interactive Tableau dashboard](https://public.tableau.com/app/profile/peter.francis.muthukkalai/viz/Bellabeat_Analysis_17749098758380)
 
-\---
+
 
 ## About
 
