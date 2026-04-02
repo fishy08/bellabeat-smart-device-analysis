@@ -63,7 +63,7 @@ Before analysis, all five tables were audited in BigQuery. The following issues 
 
 ### 1\. Activity by Day of Week — The Saturday Leisure Peak
 
-!\[Steps by Day of Week](charts/chart1\_steps\_day.png)
+!\[Steps by Day of Week](charts/chart1_steps_day.png)
 
 Users average 8,329 daily steps — 17% below the WHO 10,000-step goal. Saturday is the most active day at 8,979 steps, driven by leisure activity rather than habit. Sunday and Friday are the weakest days. Monday records the highest sedentary time (16.4 hours), suggesting a work-week onset effect. This pattern mirrors what Cyclistic found with casual riders: activity is recreational, not routine.
 
@@ -71,7 +71,7 @@ Users average 8,329 daily steps — 17% below the WHO 10,000-step goal. Saturday
 
 ### 2\. Activity by Hour — Three Peaks and a Critical Dip
 
-!\[Steps by Hour of Day](charts/chart2\_steps\_hour.png)
+!\[Steps by Hour of Day](charts/chart2_steps_hour.png)
 
 Three clear activity windows emerge across the day: morning (8–10am), lunch (12–2pm), and evening (5–7pm, peaking at 6pm with 599 avg steps/hour). Crucially, a consistent **3pm dip** drops activity to 406 avg steps — the lowest point of the active day. This is the single most actionable finding in the dataset: it identifies a precise, daily window for a Leaf movement reminder.
 
@@ -79,7 +79,7 @@ Three clear activity windows emerge across the day: morning (8–10am), lunch (1
 
 ### 3\. Sleep Quality — The Sunday Paradox
 
-!\[Sleep Quality by Day](charts/chart3\_sleep\_day.png)
+!\[Sleep Quality by Day](charts/chart3_sleep_day.png)
 
 Users average 7.0 hours of sleep per night — just meeting the minimum recommended threshold — but spend 39 minutes awake in bed nightly, indicating poor sleep quality rather than a duration problem. The Sunday paradox stands out: Sunday has the most time in bed (8.4 hours) yet the worst sleep quality (50.8 minutes awake). Anticipatory work-week stress is the likely driver. This is a clear, underserved use case for a Leaf wind-down programme.
 
@@ -87,7 +87,7 @@ Users average 7.0 hours of sleep per night — just meeting the minimum recommen
 
 ### 4\. User Segments — Who Are These Users?
 
-!\[User Activity Segments](charts/chart4\_user\_segments.png)
+!\[User Activity Segments](charts/chart4_user_segments.png)
 
 Users were segmented into four tiers by average daily step count. Moderately Active users (33.3%) are the largest group and sit closest to the Active threshold — making them the highest-priority conversion target. With relatively small step increases, this segment could cross into Active behaviour. Sedentary users (21.2%) represent a separate challenge that likely requires different messaging and product features.
 
@@ -95,7 +95,7 @@ Users were segmented into four tiers by average daily step count. Moderately Act
 
 ### 5\. Sedentary Behaviour Across Segments
 
-!\[Sedentary Hours by Segment](charts/chart5\_sedentary\_segment.png)
+!\[Sedentary Hours by Segment](charts/chart5_sedentary_segment.png)
 
 Even the most Active users average 16.2 sedentary hours per day — demonstrating that high step counts do not prevent prolonged inactivity. The Sedentary segment averages 18.2 hours. Paradoxically, Lightly Active users (17.7h) sit above Active users in sedentary time despite a moderate step count, suggesting that activity is concentrated in short bursts. Sedentary behaviour is a universal problem across all segments, not just the least active users.
 
@@ -103,7 +103,7 @@ Even the most Active users average 16.2 sedentary hours per day — demonstratin
 
 ### 6\. Active Minutes Breakdown — The Real Picture of the Day
 
-!\[Active Minutes Breakdown](charts/chart6\_active\_minutes.png)
+!\[Active Minutes Breakdown](charts/chart6_active_minutes.png)
 
 Breaking the day into activity intensity types reveals the full extent of inactivity. Sedentary time accounts for 951.8 minutes per day — 66% of a 24-hour day. Very Active minutes total just 23.2 per day, which is close to the recommended 20–30 minutes of vigorous daily exercise, but users are not consistently reaching it. The gap between intent and habit is where the Leaf can intervene.
 
@@ -167,8 +167,8 @@ Classify users into activity segments at onboarding based on their first two wee
 
 The full deliverables are available in this repository:
 
-📊 `Bellabeat\_Analysis\_Peter\_Francis.pptx` — 14-slide executive presentation  
-📝 `Bellabeat\_Report\_Peter\_Francis.docx` — Full analytical report (9 pages)  
+📊 `Bellabeat_Analysis_Peter_Francis.pptx` — 14-slide executive presentation  
+📝 `Bellabeat_Report_Peter_Francis.docx` — Full analytical report (9 pages)  
 📈 `charts/` — All 6 analysis charts
 
 🔗 [View interactive Tableau dashboard](https://public.tableau.com/app/profile/peter.francis.muthukkalai/viz/Bellabeat_Analysis_17749098758380)
